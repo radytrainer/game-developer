@@ -101,6 +101,11 @@ nav ul a {
   box-shadow: rgba(21, 255, 0, 0.3) 0px 1px 2px 0px, rgba(2, 249, 7, 0.15) 0px 1px 3px 1px;
   border-radius: 5px;
 }
+@media screen and (max-width: 1165px) {
+  .card-group .card {
+    box-shadow: rgba(14, 18, 255, 0.3) 0px 1px 2px 0px, rgba(23, 2, 249, 0.15) 0px 1px 3px 1px;
+  }
+}
 @media screen and (max-width: 600px) {
   .card-group .card {
     box-shadow: rgba(255, 0, 76, 0.3) 0px 1px 2px 0px, rgba(249, 2, 2, 0.15) 0px 1px 3px 1px;
@@ -135,6 +140,12 @@ nav ul a {
 @media screen and (max-width: 600px) {
   .card-group .card img {
     content: url("../../images/game.jpg");
+  }
+}
+@media screen and (max-width: 1165px) {
+  .card-group .card {
+    width: 46%;
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 600px) {
