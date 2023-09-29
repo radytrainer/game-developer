@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border:none;
+    list-style-type: none;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+@import 'components/navbar';
+@import 'components/card';
+@import 'components/footer';
+
+body {
+    background: #000;
+}

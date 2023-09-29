@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: none;
+  list-style-type: none;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1165px) {
+  nav {
+    flex-direction: column;
+    color: rgb(0, 13, 255);
+  }
+}
+nav .logo {
+  flex: 1;
+  border-right: 5px solid rgb(27, 246, 8);
+  border-top: 10px solid #7b0808;
+  border-radius: 0 40px 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1165px) {
+  nav .logo {
+    border: none;
+    flex-direction: column;
+  }
+}
+nav .logo img {
+  width: 20%;
+}
+nav .logo span {
+  color: rgb(17, 255, 0);
+  font-size: 20px;
+}
+@media screen and (max-width: 1165px) {
+  nav .logo span {
+    color: blue;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .logo span {
+    color: red;
+  }
+}
+nav ul {
+  display: flex;
+  flex: 3;
+  justify-content: space-evenly;
+  background: #1a1717;
+  padding: 10px;
+  border-radius: 0px 0 0 40px;
+}
+nav ul li {
+  padding: 10px;
+}
+nav ul a {
+  color: rgb(21, 255, 0);
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1165px) {
+  nav ul a {
+    color: rgb(25, 0, 255);
+  }
+}
+@media screen and (max-width: 600px) {
+  nav ul a {
+    color: red;
+  }
+}
+@media screen and (max-width: 1165px) {
+  nav ul {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 12px;
+  background: #000;
+}
+@media screen and (max-width: 600px) {
+  .card-group {
+    padding: 10px;
+  }
+}
+.card-group .card {
+  width: 22%;
+  box-shadow: rgba(21, 255, 0, 0.3) 0px 1px 2px 0px, rgba(2, 249, 7, 0.15) 0px 1px 3px 1px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 600px) {
+  .card-group .card {
+    box-shadow: rgba(255, 0, 76, 0.3) 0px 1px 2px 0px, rgba(249, 2, 2, 0.15) 0px 1px 3px 1px;
+  }
+}
+.card-group .card .card-body {
+  padding: 10px;
+  color: #fff;
+}
+.card-group .card .card-body h3 {
+  color: rgb(15, 209, 21);
+  text-align: center;
+}
+@media screen and (max-width: 1165px) {
+  .card-group .card .card-body h3 {
+    color: blue;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-group .card .card-body h3 {
+    color: red;
+  }
+}
+.card-group .card img {
+  width: 100%;
+}
+@media screen and (max-width: 1165px) {
+  .card-group .card img {
+    content: url("../../images/blue.png");
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-group .card img {
+    content: url("../../images/game.jpg");
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-group .card {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  border-top: 1px solid greenyellow;
+  padding: 10px;
+}
+@media screen and (max-width: 1165px) {
+  footer {
+    border-top: 1px solid rgb(3, 3, 242);
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    border-top: 1px solid rgb(242, 3, 58);
+  }
+}
+footer .left {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .left img {
+  width: 7%;
+}
+footer .right {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer .right h2 {
+  color: rgb(13, 229, 9);
+}
+@media screen and (max-width: 1165px) {
+  footer .right h2 {
+    color: blue;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .right h2 {
+    color: red;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .right p {
+    text-align: center;
+  }
+}
+
+body {
+  background: #000;
+}/*# sourceMappingURL=main.css.map */

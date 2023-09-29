@@ -1,0 +1,51 @@
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content:center;
+    margin-top: 12px;
+    background: #000;
+    @include responsive('mobile') {
+       padding: 10px;
+       
+    }
+
+    .card {
+        width: 22%;
+        box-shadow: rgba(21, 255, 0, 0.3) 0px 1px 2px 0px, rgba(2, 249, 7, 0.15) 0px 1px 3px 1px;
+        border-radius: 5px;
+        @include responsive('mobile') {
+            box-shadow: rgba(255, 0, 76, 0.3) 0px 1px 2px 0px, rgba(249, 2, 2, 0.15) 0px 1px 3px 1px;
+         }
+        .card-body {
+            padding: 10px;
+            color: #fff;
+
+            h3 {
+                color: rgb(15, 209, 21);
+                text-align: center;
+                @include responsive('tablet') {
+                   color: blue;
+                }
+                @include responsive('mobile') {
+                   color: red;
+                }
+            }
+        }
+        img {
+            width: 100%;
+            @include responsive('tablet') {
+               content: url('../../images/blue.png');
+            }
+            @include responsive('mobile') {
+               content: url('../../images/game.jpg');
+            }
+        }
+
+        @include responsive('mobile') {
+            width: 100%;
+            margin-top: 10px;
+           
+        }
+    }
+}
